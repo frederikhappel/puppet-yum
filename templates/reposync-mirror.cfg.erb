@@ -1,0 +1,13 @@
+# This file is managed by puppet! Do not change!
+MAILTO="<%= @mailto %>"
+RELEASES="<%= @releases.join(' ') %>"
+ARCHS="<%= @archs.join(' ') %>"
+REPONAME="<%= @reponame %>"
+BASEURL="<%= @baseurl_real %>"
+REPODESTBASE="<%= scope.lookupvar('yum::mirror::pkgdir') %>"
+GPGCHECK=<%= @gpgcheck ? 1 : 0 %>
+GPGKEY=<%= @gpgkey %>
+WORKERS=<%= @workers %>
+DOWNLOAD_COMPS=<%= @download_comps %>
+DOWNLOAD_NEWEST_ONLY=<%= @download_newest_only %>
+DELETE_NONEXISTENT=<%= @delete_nonexistent %>

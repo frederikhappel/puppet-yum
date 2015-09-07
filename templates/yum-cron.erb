@@ -1,0 +1,11 @@
+# This file is managed by puppet! Do not change!
+YUM_PARAMETER=<%= !@yum_parameter.nil? ? @yum_parameter : "" %>
+CHECK_ONLY=<%= @check_only ? "yes" : "no" %>
+CHECK_FIRST=<%= @check_first ? "yes" : "no" %>
+DOWNLOAD_ONLY=<%= @download_only ? "yes" : "no" %>
+RANDOMWAIT=<%= @randomwait %>
+MAILTO="<%= @mailto %>"
+DAYS_OF_WEEK="<%= @days_of_week %>"
+CLEANDAY="<%= @cleanday %>"
+SERVICE_WAITS=<%= @service_waits ? "yes" : "no" %>
+SERVICE_WAIT_TIME=<%= @service_wait_time %>
